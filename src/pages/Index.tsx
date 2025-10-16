@@ -1,12 +1,45 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Carousel from "@/components/Carousel";
+import AboutSection from "@/components/AboutSection";
+import MembersSection from "@/components/MembersSection";
+import InstitutionsSection from "@/components/InstitutionsSection";
+import EventsSection from "@/components/EventsSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        
+        {/* Carousel Section */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12 animate-slide-up">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Our Research in Action
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Explore cutting-edge research and innovation happening at our laboratories and
+                research centers.
+              </p>
+            </div>
+            <Carousel />
+          </div>
+        </section>
+
+        <AboutSection />
+        <MembersSection />
+        <InstitutionsSection />
+        <EventsSection />
+        <ContactSection />
+      </main>
+      <Footer />
+      <BackToTop />
     </div>
   );
 };
