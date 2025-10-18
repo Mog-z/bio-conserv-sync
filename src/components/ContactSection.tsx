@@ -91,7 +91,39 @@ const ContactSection = () => {
           <div className="space-y-8 animate-fade-in">
             <div>
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+              <p className="text-muted-foreground mb-6">
+                The INCT CERBC is a National Institute of Science, Technology, and Innovation (INCT) of CNPq. Our institute aims to bring together research groups focused on the exploration and conservation of Biological Resources in strategic areas of health and biotechnology.
+              </p>
               <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <MapPin className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-1">Address</p>
+                    <p className="text-muted-foreground">
+                      Professor Vânia Aparecida Vicente<br />
+                      Basic Pathology Department<br />
+                      Federal University of Parana State<br />
+                      BOX: 19031, Zip Code: 81.531-980<br />
+                      Curitiba, PR, Brazil
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Phone className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-1">Phone</p>
+                    <a
+                      href="tel:+55413361704"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      +55 41 3361 1704
+                    </a>
+                  </div>
+                </div>
                 <div className="flex items-start gap-4">
                   <div className="bg-primary/10 p-3 rounded-lg">
                     <Mail className="h-6 w-6 text-primary" />
@@ -106,49 +138,27 @@ const ContactSection = () => {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold mb-1">Phone</p>
-                    <a
-                      href="tel:+551199999999"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      +55 11 9999-9999
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold mb-1">Location</p>
-                    <p className="text-muted-foreground">
-                      University of São Paulo
-                      <br />
-                      São Paulo, SP - Brazil
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
 
             {/* Interactive Google Map */}
-            <div className="rounded-xl overflow-hidden border border-border h-[300px]">
+            <div className="rounded-xl overflow-hidden border border-border h-[300px] group relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483474777544!2d-46.731685684571616!3d-23.561684884682988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62fa0!2sUniversidade%20de%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1234567890123"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8976572697287!2d-49.27822648498077!3d-25.450200983761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce462e7a8de4f%3A0x1a7d3a6b7a8f0c7e!2sFederal%20University%20of%20Paran%C3%A1!5e0!3m2!1sen!2sbr!4v1698765432109!5m2!1sen!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="INCT CERBC Location"
+                title="INCT CERBC Location - Federal University of Paraná"
                 className="grayscale hover:grayscale-0 transition-all duration-300"
               />
+              <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/5">
+                <span className="text-xs bg-background/90 px-3 py-1.5 rounded-lg shadow-lg">
+                  Click to interact with map
+                </span>
+              </div>
             </div>
           </div>
         </div>

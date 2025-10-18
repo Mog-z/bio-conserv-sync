@@ -34,10 +34,27 @@ const Hero = () => {
             <span className="text-primary">Biotechnology and Conservation</span>
           </h1>
           <p className="text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto drop-shadow">
-            INCT CERBC aims to preserve and explore the biotechnological potential of microorganisms and parasites of clinical and environmental origin across Brazilian biodiversity.
+            INCT-CERBC aims to preserve and explore the biotechnological potential of microorganisms (fungal and bacteria) and parasites of clinical and environmental origin that make up Brazilian biodiversity, as well as those from the collections of other countries through the international institutions associated with this proposal.
           </p>
-          <div className="flex gap-4 justify-center">
-            
+          
+          {/* CERBC in Numbers */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-8">
+            <div className="bg-background/80 backdrop-blur-sm rounded-lg p-6 text-center border border-border hover:border-primary transition-all duration-300">
+              <div className="text-4xl font-bold text-primary mb-2">49</div>
+              <div className="text-sm text-muted-foreground">National Members</div>
+            </div>
+            <div className="bg-background/80 backdrop-blur-sm rounded-lg p-6 text-center border border-border hover:border-primary transition-all duration-300">
+              <div className="text-4xl font-bold text-primary mb-2">7</div>
+              <div className="text-sm text-muted-foreground">International Members</div>
+            </div>
+            <div className="bg-background/80 backdrop-blur-sm rounded-lg p-6 text-center border border-border hover:border-primary transition-all duration-300">
+              <div className="text-4xl font-bold text-primary mb-2">4</div>
+              <div className="text-sm text-muted-foreground">Patents Filed</div>
+            </div>
+            <div className="bg-background/80 backdrop-blur-sm rounded-lg p-6 text-center border border-border hover:border-primary transition-all duration-300">
+              <div className="text-4xl font-bold text-primary mb-2">329</div>
+              <div className="text-sm text-muted-foreground">Published Articles</div>
+            </div>
           </div>
         </div>
       </div>
