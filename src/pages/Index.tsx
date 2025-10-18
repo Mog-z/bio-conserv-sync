@@ -10,7 +10,6 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import InfiniteSlider from "@/components/InfiniteSlider";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-
 const Index = () => {
   const carouselReveal = useScrollReveal();
   const aboutReveal = useScrollReveal();
@@ -18,14 +17,12 @@ const Index = () => {
   const institutionsReveal = useScrollReveal();
   const eventsReveal = useScrollReveal();
   const contactReveal = useScrollReveal();
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       <main>
         <Hero />
         
-        <InfiniteSlider />
+        
         
         {/* Carousel Section */}
         <section className="py-24" ref={carouselReveal.ref}>
@@ -65,8 +62,6 @@ const Index = () => {
       </main>
       <Footer />
       <BackToTop />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
