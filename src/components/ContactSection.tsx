@@ -136,12 +136,19 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="rounded-xl overflow-hidden border border-border h-[300px] bg-muted flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="h-12 w-12 mx-auto mb-2" />
-                <p>Map Location</p>
-              </div>
+            {/* Interactive Google Map */}
+            <div className="rounded-xl overflow-hidden border border-border h-[300px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483474777544!2d-46.731685684571616!3d-23.561684884682988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62fa0!2sUniversidade%20de%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1234567890123"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="INCT CERBC Location"
+                className="grayscale hover:grayscale-0 transition-all duration-300"
+              />
             </div>
           </div>
         </div>

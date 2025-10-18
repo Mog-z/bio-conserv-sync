@@ -64,10 +64,14 @@ const Header = () => {
           {/* Logo */}
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center cursor-pointer"
+            className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
             aria-label="Scroll to top"
           >
-            <img src={logo} alt="INCT-CERBC" className="h-16 w-auto" />
+            <img 
+              src={logo} 
+              alt="INCT-CERBC Logo" 
+              className="h-20 md:h-24 lg:h-28 w-auto object-contain"
+            />
           </button>
 
           {/* Desktop Navigation */}

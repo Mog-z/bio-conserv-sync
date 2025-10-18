@@ -42,11 +42,63 @@ const AboutSection = () => {
             techniques, genomic analysis, and ecological research, we develop practical solutions
             for preserving Earth's biological heritage.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             By integrating fundamental research with applied conservation strategies, INCT CERBC
             serves as a hub for scientific excellence, fostering innovation that bridges laboratory
             discoveries with real-world environmental impact.
           </p>
+          
+          <div className="bg-background p-8 rounded-xl border border-border mt-8">
+            <h3 className="text-2xl font-bold mb-4">Research Areas</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3">
+                <div className="bg-primary/10 rounded-full p-2 mt-1">
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Microbiology & Parasitology</h4>
+                  <p className="text-sm text-muted-foreground">Study of microorganisms and parasites of clinical and environmental importance</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="bg-primary/10 rounded-full p-2 mt-1">
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Biodiversity Conservation</h4>
+                  <p className="text-sm text-muted-foreground">Preservation of Brazilian ecosystems and endemic species</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="bg-primary/10 rounded-full p-2 mt-1">
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Biotechnology Applications</h4>
+                  <p className="text-sm text-muted-foreground">Development of biotechnological solutions for environmental challenges</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="bg-primary/10 rounded-full p-2 mt-1">
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Bioinformatics & Genomics</h4>
+                  <p className="text-sm text-muted-foreground">Advanced computational analysis of biological data</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-primary/5 p-8 rounded-xl border border-primary/20 mt-8">
+            <h3 className="text-2xl font-bold mb-4">International Partnerships</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              INCT CERBC maintains active collaborations with research institutions across the globe, 
+              fostering knowledge exchange and joint research initiatives. Our international network 
+              enables us to address global conservation challenges while contributing to Brazil's 
+              scientific leadership in biotechnology and environmental research.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

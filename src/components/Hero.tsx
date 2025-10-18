@@ -30,12 +30,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 pt-20">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-foreground drop-shadow-lg">
-            Advancing Biotechnology and Conservation for a{" "}
-            <span className="text-primary">Sustainable Future</span>
+            Pioneering the Future of{" "}
+            <span className="text-primary">Biotechnology and Conservation</span>
           </h1>
           <p className="text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto drop-shadow">
-            Integrating research, innovation, and global collaboration to address environmental
-            challenges through cutting-edge biotechnology.
+            INCT CERBC aims to preserve and explore the biotechnological potential of microorganisms and parasites of clinical and environmental origin across Brazilian biodiversity.
           </p>
           <div className="flex gap-4 justify-center">
             
